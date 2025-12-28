@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>SmällareSweden</title>
+
+<style>
+
+.brapris {
+    position: fixed;
+    top: 80px;        /* samma höjd som kampanj */
+    right: 130px;     /* andra hörnet, lite mot mitten */
+    width: 360px;     /* stor */
+    z-index: 10000;
+}
+
+
+.kampanj {
+    position: fixed;
+    top: 80px;        /* lite längre ner */
+    left: 80px;      /* samma bra läge mot mitten */
+    width: 450px;     /* större */
+    z-index: 10000;
+}
+
+
+
+
+/* ===== RAM ===== */
+.frame-left,
+.frame-right {
+    position: fixed;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background-image: url("side.png");
+    background-repeat: repeat-y;
+    background-size: 35px auto;
+    z-index: 9999;
+}
+
+.frame-left { left: 0; }
+.frame-right { right: 0; }
+
+/* ===== INNEHÅLL ===== */
+body {
+    margin: 0;
+    padding: 40px;
+    background-image: url("vägg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== SIDOBILDER ===== */
+.side-banner {
+    position: fixed;
+    top: 55%;                 /* lite högre upp */
+    transform: translateY(-50%);
+    width: 180px;             /* lite större */
+    z-index: 9000;
+}
+
+.side-banner.left {
+    left: 65px;               /* pyttelite mer mot mitten */
+}
+
+.side-banner.right {
+    right: 65px;              /* pyttelite mer mot mitten */
+}
+
+/* ===== BANNER ===== */
+.banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ===== PRODUKTER ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 bredvid varandra */
+    gap: 30px;
+    max-width: 780px;
+    margin: auto;
+}
+
+/* gör så <a> inte förstör grid */
+.product-grid a {
+    display: contents;
+}
+
+.product {
+    text-align: center;
+    color: white;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+
+}
+
+}
+</style>
+</head>
+
+<body>
+<img src="brapris.png" class="brapris" alt="Bästa pris">
+<img src="kampanj.png" class="kampanj" alt="Kampanj">
+
+
+<div class="frame-left"></div>
+<div class="frame-right"></div>
+
+<img src="bannerside.png" class="side-banner left" alt="">
+<img src="bannerside.png" class="side-banner right" alt="">
+
+<div class="banner">
+    <img src="banner.png" alt="Banner">
+</div>
+
+<div class="product-grid">
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p1.png"><p>Thunder Crack<br>229 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p2.png"><p>Silver Shock<br>55 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p3.png"><p>Night Blaster<br>100 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p4.png"><p>Red Devil Smällare<br>399 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p5.png"><p>Sky Fury<br>110 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p6.png"><p>Blue Thunder<br>250 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p7.png"><p>Atomic Crackers<br>150 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p8.png"><p>Inferno Pops<br>150 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p9.png"><p>Storm King<br>99 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p10.png"><p>Neon Blast<br>50 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p11.png"><p>Midnight Bang<br>150 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p12.png"><p>Ragnarök<br>155 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p13.png"><p>Galaxy Bombtårta<br>149 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p14.png"><p>Thunder Cake<br>15 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p15.png"><p>Skyfall Extreme<br>349 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p16.png"><p>Golden Vortex<br>329 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p17.png"><p>Crimson Storm<br>49 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p18.png"><p>Nightfall Cake<br>289 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p19.png"><p>Sky Annihilator<br>49 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p20.png"><p>Nova Burst<br>89 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p21.png"><p>Iron Thunder<br>129 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p22.png"><p>Cosmic Rage<br>369 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p23.png"><p>Blackout Bombtårta<br>449 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p24.png"><p>Sky Dominator<br>89 kr</p></div></a>
+
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p25.png"><p>Phantom Blast<br>169 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p26.png"><p>Voltage Crackers<br>155 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p27.png"><p>Firestorm XL<br>549 kr</p></div></a>
+<a href="https://blackvortex.netlify.app"><div class="product"><img src="images/p28.png"><p>Ultimate Chaos<br>59 kr</p></div></a>
+
+</div>
+
+</body>
+</html>
